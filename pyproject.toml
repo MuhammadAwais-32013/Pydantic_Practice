@@ -1,0 +1,24 @@
+[project]
+name = "pydantic-practice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Awais Qarni", email = "owaisq2019@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.11.7",
+]
+
+[project.scripts]
+intro = "pydantic_practice:intro.main"
+field = "pydantic_practice:Field_Validator.main"
+comp = "pydantic_practice:compute_Field.main"
+model = "pydantic_practice:model_validator.main"
+nested = "pydantic_practice:nested_model.main"
+seri = "pydantic_practice:serilization.main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
